@@ -32,8 +32,11 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies and build
-        run: npm install && npm run build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -62,7 +65,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         with: 
           target_branch: gh-pages
-          # deploy the default output dir of VitePress
           build_dir: ./artifact
           jekyll: false
           fqdn: 'keosu.github.io/one'
