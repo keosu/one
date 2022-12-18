@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router/dist/vue-router.esm-bundler'
-import { PageMain, PageAbout, PageErr} from '../pages'
+import { PageMain, PageAbout, PageErr} from '@/pages'
 
 export default createRouter({
   history: createWebHashHistory(),
