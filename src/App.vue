@@ -5,7 +5,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <p>hey</p>
   <HelloWorld msg="Hello one app" />
+  <RouterView/>
 </template>
 
 <style>

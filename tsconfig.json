@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
+    "noImplicitAny": false,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "types": ["vuetify"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
